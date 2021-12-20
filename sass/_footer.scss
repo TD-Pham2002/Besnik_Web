@@ -42,16 +42,14 @@
       flex-direction: column;
       text-align: center;
       gap: 50px 0;
+      margin-bottom: 30px;
     }
     &-item {
       width: 100%;
       padding-bottom: 10px;
-    }
-    &-item:not(:last-child) {
       border-bottom: 1px solid $text-color;
     }
     &-bottom {
-      border-top: 1px solid $text-color;
       padding-top: 30px;
       flex-direction: column;
     }
