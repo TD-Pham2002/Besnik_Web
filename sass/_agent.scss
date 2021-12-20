@@ -1,0 +1,84 @@
+.agent {
+  background-color: $color-secondary;
+  &-block {
+    padding: 112px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-talk {
+    width: 508px;
+  }
+  &-heading {
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    color: white;
+    margin-bottom: 22px;
+  }
+  &-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: #b6bec8;
+  }
+  &-right-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    margin-bottom: 14px;
+  }
+  &-right {
+    width: 366px;
+  }
+  &-search {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+  }
+  &-search-input {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: $text-color;
+    opacity: 0.4;
+    padding: 0 20px;
+  }
+  &-search-btn {
+    height: 56px;
+    background-color: $color-primary;
+    border-radius: 0 5px 5px 0;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &-search-btn-icon {
+    padding: 0 23px;
+    font-size: 18px;
+    color: white;
+  }
+  @media screen and (max-width: 1023px) {
+    &-block {
+      gap: 0 50px;
+    }
+    &-talk,
+    &-right {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &-block {
+      flex-direction: column;
+    }
+    &-talk,
+    &-right {
+      width: 100%;
+    }
+    &-talk {
+      margin-bottom: 50px;
+    }
+  }
+}
